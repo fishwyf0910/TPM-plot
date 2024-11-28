@@ -66,9 +66,9 @@ sign <- df %>%
     .groups = 'drop'
   )
 
-# 查看显著性结果
+# 查看显著性结果，手动添加到图中
 print(sign)
 
-pdf("TPM.pdf",width=4,height=4)
+pdf("TPM-HB.pdf",width=4,height=4)
   p1
 dev.off()
