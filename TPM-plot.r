@@ -49,7 +49,7 @@ p1 <- ggplot(summary_df, aes(x = group, y = mean_value, color = tissue, group = 
     color = "Tissue",  # 图例标题
     linetype = "Tissue"  # 图例标题
   ) +
-  theme(panel.background = element_rect(fill = "white"))
+  theme(panel.background = element_rect(fill = "white"))+coord_cartesian(ylim = c(0, 115))
 
 # 计算cold-brain与control-brain的显著性和cold-heart与control-heart的显著性，保存到变量sign中
 sign <- df %>%
