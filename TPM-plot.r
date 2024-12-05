@@ -66,7 +66,7 @@ sign <- df %>%
     .groups = 'drop'
   )
 
-# 查看显著性结果，手动添加到图中
+# 查看显著性结果，添加到图中
 print(sign)
 p1
 
